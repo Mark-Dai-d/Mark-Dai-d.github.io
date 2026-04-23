@@ -7,30 +7,30 @@
   <meta name="description" content="面向大学生绿色创业的市场洞察、政策匹配、案例灵感与企业对接平台。">
   <style>
     :root {
-      --bg: #f5f8ff;
+      --bg: #f7faf6;
       --bg-strong: #ffffff;
-      --surface: rgba(255, 255, 255, 0.92);
+      --surface: rgba(255, 255, 255, 0.98);
       --surface-strong: #ffffff;
-      --surface-soft: #f3f7ff;
-      --line: rgba(41, 91, 214, 0.14);
-      --line-strong: rgba(41, 91, 214, 0.28);
-      --text: #11254d;
-      --muted: #65759b;
-      --primary: #2563eb;
-      --primary-deep: #163fa8;
-      --primary-soft: rgba(37, 99, 235, 0.11);
-      --green: #20a779;
-      --green-soft: rgba(32, 167, 121, 0.12);
-      --gold: #efb94a;
-      --gold-soft: rgba(239, 185, 74, 0.14);
-      --danger: #dc5d78;
-      --danger-soft: rgba(220, 93, 120, 0.14);
-      --shadow: 0 20px 50px rgba(20, 54, 133, 0.08);
-      --shadow-lg: 0 30px 80px rgba(22, 63, 168, 0.12);
-      --radius-xl: 30px;
-      --radius-lg: 24px;
-      --radius-md: 18px;
-      --radius-sm: 14px;
+      --surface-soft: #f6fbf6;
+      --line: rgba(37, 157, 76, 0.12);
+      --line-strong: rgba(37, 157, 76, 0.24);
+      --text: #243127;
+      --muted: #6a756c;
+      --primary: #23a249;
+      --primary-deep: #177b35;
+      --primary-soft: rgba(35, 162, 73, 0.1);
+      --green: #23a249;
+      --green-soft: rgba(35, 162, 73, 0.12);
+      --gold: #f0ad2c;
+      --gold-soft: rgba(240, 173, 44, 0.14);
+      --danger: #df6f5a;
+      --danger-soft: rgba(223, 111, 90, 0.14);
+      --shadow: 0 10px 24px rgba(30, 90, 46, 0.06);
+      --shadow-lg: 0 18px 38px rgba(30, 90, 46, 0.08);
+      --radius-xl: 26px;
+      --radius-lg: 22px;
+      --radius-md: 16px;
+      --radius-sm: 12px;
     }
 
     * {
@@ -47,10 +47,10 @@
       font-family: "Source Han Sans SC", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
       color: var(--text);
       background:
-        radial-gradient(circle at 0% 0%, rgba(174, 209, 255, 0.5), transparent 26%),
-        radial-gradient(circle at 100% 8%, rgba(213, 227, 255, 0.66), transparent 24%),
-        radial-gradient(circle at 18% 100%, rgba(187, 234, 219, 0.34), transparent 24%),
-        linear-gradient(180deg, #fbfdff 0%, #f4f8ff 48%, #eef4ff 100%);
+        radial-gradient(circle at 0% 0%, rgba(203, 236, 214, 0.52), transparent 28%),
+        radial-gradient(circle at 100% 10%, rgba(231, 245, 236, 0.88), transparent 28%),
+        radial-gradient(circle at 18% 100%, rgba(210, 238, 220, 0.36), transparent 30%),
+        linear-gradient(180deg, #fcfefb 0%, #f8fbf7 46%, #f2f7f1 100%);
       overflow-x: hidden;
     }
 
@@ -70,7 +70,7 @@
       height: 320px;
       left: -120px;
       top: 18vh;
-      background: radial-gradient(circle, rgba(124, 171, 255, 0.46), transparent 70%);
+      background: radial-gradient(circle, rgba(105, 191, 129, 0.3), transparent 70%);
     }
 
     body::after {
@@ -78,7 +78,7 @@
       height: 360px;
       right: -120px;
       bottom: 4vh;
-      background: radial-gradient(circle, rgba(110, 215, 180, 0.28), transparent 72%);
+      background: radial-gradient(circle, rgba(163, 219, 179, 0.28), transparent 72%);
     }
 
     button,
@@ -103,27 +103,25 @@
       position: relative;
       z-index: 1;
       display: grid;
-      grid-template-columns: 280px minmax(0, 1fr);
-      gap: 20px;
+      grid-template-columns: 236px minmax(0, 1fr);
+      gap: 14px;
       max-width: 1760px;
       margin: 0 auto;
-      padding: 22px;
+      padding: 14px;
     }
 
     .sidebar {
       position: sticky;
-      top: 22px;
-      height: calc(100vh - 44px);
+      top: 14px;
+      height: calc(100vh - 28px);
       display: flex;
       flex-direction: column;
-      gap: 20px;
-      padding: 22px 18px;
-      border: 1px solid rgba(255, 255, 255, 0.84);
-      border-radius: 32px;
-      background:
-        linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(245, 249, 255, 0.95));
-      box-shadow: var(--shadow-lg);
-      backdrop-filter: blur(16px);
+      gap: 16px;
+      padding: 16px 14px;
+      border: 1px solid rgba(35, 162, 73, 0.14);
+      border-radius: 24px;
+      background: #ffffff;
+      box-shadow: var(--shadow);
     }
 
     .brand-block {
@@ -131,7 +129,7 @@
       align-items: center;
       gap: 14px;
       padding: 2px 4px 12px;
-      border-bottom: 1px solid rgba(37, 99, 235, 0.08);
+      border-bottom: 1px solid rgba(35, 162, 73, 0.08);
     }
 
     .brand-mark {
@@ -141,8 +139,8 @@
       border-radius: 18px;
       background:
         radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.92), transparent 22%),
-        linear-gradient(135deg, #4a92ff, #1b5de8 58%, #173cb2);
-      box-shadow: 0 16px 32px rgba(27, 93, 232, 0.26);
+        linear-gradient(135deg, #63bf72, #24a246 58%, #18783a);
+      box-shadow: 0 12px 26px rgba(35, 162, 73, 0.22);
       position: relative;
     }
 
@@ -170,7 +168,7 @@
 
     .brand-copy strong {
       display: block;
-      font-size: 28px;
+      font-size: 24px;
       line-height: 1.1;
       letter-spacing: 0.02em;
     }
@@ -179,7 +177,7 @@
       display: block;
       margin-top: 6px;
       color: var(--muted);
-      font-size: 13px;
+      font-size: 12px;
       line-height: 1.6;
     }
 
@@ -192,9 +190,8 @@
       padding: 0 10px;
       font-size: 12px;
       font-weight: 800;
-      color: #7083ad;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
+      color: #8aa08f;
+      letter-spacing: 0.04em;
     }
 
     .nav-link {
@@ -203,22 +200,21 @@
       gap: 12px;
       width: 100%;
       border: 0;
-      border-radius: 18px;
-      padding: 12px 14px;
+      border-radius: 16px;
+      padding: 11px 14px;
       background: transparent;
-      color: #345089;
+      color: #425447;
       text-align: left;
-      transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+      transition: background 0.18s ease, box-shadow 0.18s ease, color 0.18s ease;
     }
 
     .nav-link:hover {
-      transform: translateX(2px);
-      background: rgba(37, 99, 235, 0.06);
+      background: rgba(35, 162, 73, 0.06);
     }
 
     .nav-link.active {
-      background: linear-gradient(135deg, rgba(37, 99, 235, 0.14), rgba(37, 99, 235, 0.08));
-      box-shadow: inset 0 0 0 1px rgba(37, 99, 235, 0.12);
+      background: linear-gradient(90deg, rgba(35, 162, 73, 0.16), rgba(123, 212, 148, 0.26));
+      box-shadow: inset 0 0 0 1px rgba(35, 162, 73, 0.1);
       color: var(--primary-deep);
     }
 
@@ -229,8 +225,8 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      border-radius: 12px;
-      background: rgba(37, 99, 235, 0.1);
+      border-radius: 10px;
+      background: rgba(35, 162, 73, 0.1);
       font-size: 12px;
       font-weight: 800;
       color: var(--primary-deep);
@@ -241,10 +237,14 @@
       display: grid;
       gap: 14px;
       padding: 18px;
-      border-radius: 24px;
+      border-radius: 20px;
       border: 1px solid var(--line);
-      background: linear-gradient(180deg, rgba(245, 249, 255, 0.96), rgba(255, 255, 255, 0.96));
+      background: linear-gradient(180deg, rgba(247, 251, 247, 0.98), rgba(255, 255, 255, 0.98));
       box-shadow: var(--shadow);
+    }
+
+    .sidebar-profile:empty {
+      display: none;
     }
 
     .profile-role {
@@ -254,7 +254,7 @@
       gap: 8px;
       padding: 8px 12px;
       border-radius: 999px;
-      background: rgba(37, 99, 235, 0.1);
+      background: rgba(35, 162, 73, 0.1);
       color: var(--primary-deep);
       font-size: 12px;
       font-weight: 800;
@@ -296,12 +296,11 @@
       align-items: center;
       justify-content: space-between;
       gap: 18px;
-      padding: 20px 24px;
-      margin-bottom: 18px;
-      border-radius: 30px;
-      border: 1px solid rgba(255, 255, 255, 0.84);
-      background: rgba(255, 255, 255, 0.82);
-      backdrop-filter: blur(14px);
+      padding: 16px 22px;
+      margin-bottom: 14px;
+      border-radius: 22px;
+      border: 1px solid rgba(35, 162, 73, 0.12);
+      background: rgba(255, 255, 255, 0.96);
       box-shadow: var(--shadow);
     }
 
@@ -309,10 +308,9 @@
     .hero-kicker,
     .section-kicker {
       color: var(--primary);
-      font-size: 13px;
+      font-size: 12px;
       font-weight: 800;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
+      letter-spacing: 0.02em;
     }
 
     .topbar-copy h1,
@@ -323,7 +321,7 @@
     }
 
     .topbar-copy h1 {
-      font-size: 34px;
+      font-size: 28px;
       line-height: 1.16;
     }
 
@@ -333,7 +331,7 @@
       justify-content: flex-end;
       gap: 12px;
       flex-wrap: wrap;
-      min-width: 420px;
+      min-width: 360px;
     }
 
     .search-wrap {
@@ -367,8 +365,8 @@
     .field textarea:focus,
     .filter-field select:focus,
     .filter-field input:focus {
-      border-color: rgba(37, 99, 235, 0.3);
-      box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.08);
+      border-color: rgba(35, 162, 73, 0.3);
+      box-shadow: 0 0 0 4px rgba(35, 162, 73, 0.08);
     }
 
     .search-dropdown {
@@ -399,7 +397,7 @@
     }
 
     .search-item:hover {
-      background: rgba(37, 99, 235, 0.08);
+      background: rgba(35, 162, 73, 0.08);
     }
 
     .search-item strong {
@@ -420,9 +418,9 @@
     .tiny-btn,
     .action-btn {
       border: 0;
-      border-radius: 14px;
+      border-radius: 12px;
       font-weight: 700;
-      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+      transition: box-shadow 0.18s ease, background 0.18s ease, color 0.18s ease;
     }
 
     .primary-btn:hover,
@@ -430,28 +428,28 @@
     .ghost-btn:hover,
     .tiny-btn:hover,
     .action-btn:hover {
-      transform: translateY(-1px);
+      transform: none;
     }
 
     .primary-btn {
-      padding: 13px 18px;
+      padding: 12px 18px;
       color: #ffffff;
-      background: linear-gradient(135deg, #3276ff, #1b5de8);
-      box-shadow: 0 12px 26px rgba(27, 93, 232, 0.24);
+      background: linear-gradient(135deg, #22a246, #17833a);
+      box-shadow: 0 8px 18px rgba(35, 162, 73, 0.18);
     }
 
     .secondary-btn {
-      padding: 13px 18px;
+      padding: 12px 18px;
       color: var(--primary-deep);
-      background: rgba(37, 99, 235, 0.08);
-      box-shadow: inset 0 0 0 1px rgba(37, 99, 235, 0.1);
+      background: rgba(35, 162, 73, 0.08);
+      box-shadow: inset 0 0 0 1px rgba(35, 162, 73, 0.12);
     }
 
     .ghost-btn {
-      padding: 13px 18px;
-      color: #355189;
-      background: rgba(255, 255, 255, 0.94);
-      box-shadow: inset 0 0 0 1px rgba(37, 99, 235, 0.12);
+      padding: 12px 18px;
+      color: #4d5d50;
+      background: rgba(255, 255, 255, 0.98);
+      box-shadow: inset 0 0 0 1px rgba(35, 162, 73, 0.12);
     }
 
     .tiny-btn,
@@ -461,13 +459,14 @@
     }
 
     .tiny-btn {
-      background: rgba(37, 99, 235, 0.08);
+      background: rgba(35, 162, 73, 0.08);
       color: var(--primary-deep);
     }
 
     .action-btn {
-      background: rgba(32, 167, 121, 0.1);
-      color: #0d7753;
+      background: linear-gradient(135deg, rgba(35, 162, 73, 0.12), rgba(94, 195, 118, 0.16));
+      color: #177b35;
+      box-shadow: inset 0 0 0 1px rgba(35, 162, 73, 0.1);
     }
 
     .views {
@@ -522,13 +521,13 @@
       position: relative;
       overflow: hidden;
       display: grid;
-      grid-template-columns: minmax(0, 1.24fr) minmax(340px, 0.96fr);
-      gap: 24px;
-      padding: 32px;
+      grid-template-columns: minmax(0, 1.18fr) minmax(320px, 0.82fr);
+      gap: 20px;
+      padding: 28px;
       background:
-        radial-gradient(circle at 80% 10%, rgba(126, 170, 255, 0.2), transparent 28%),
-        radial-gradient(circle at 12% 94%, rgba(80, 204, 164, 0.16), transparent 26%),
-        linear-gradient(135deg, rgba(255, 255, 255, 0.92), rgba(244, 248, 255, 0.94));
+        radial-gradient(circle at 80% 10%, rgba(118, 214, 152, 0.18), transparent 28%),
+        radial-gradient(circle at 12% 94%, rgba(188, 235, 201, 0.2), transparent 26%),
+        linear-gradient(135deg, rgba(255, 255, 255, 0.94), rgba(244, 251, 245, 0.98));
     }
 
     .hero-card::before {
@@ -539,7 +538,7 @@
       width: 280px;
       height: 280px;
       border-radius: 50%;
-      background: radial-gradient(circle, rgba(70, 125, 255, 0.16), transparent 68%);
+      background: radial-gradient(circle, rgba(35, 162, 73, 0.14), transparent 68%);
     }
 
     .hero-card::after {
@@ -550,7 +549,7 @@
       width: 260px;
       height: 260px;
       border-radius: 50%;
-      background: radial-gradient(circle, rgba(74, 194, 156, 0.14), transparent 70%);
+      background: radial-gradient(circle, rgba(146, 220, 166, 0.16), transparent 70%);
     }
 
     .hero-copy {
@@ -561,7 +560,7 @@
     }
 
     .hero-copy h2 {
-      font-size: 48px;
+      font-size: 42px;
       line-height: 1.12;
       max-width: 920px;
     }
@@ -597,7 +596,7 @@
       padding: 20px;
       border-radius: 24px;
       background: rgba(255, 255, 255, 0.84);
-      box-shadow: inset 0 0 0 1px rgba(37, 99, 235, 0.08);
+      box-shadow: inset 0 0 0 1px rgba(35, 162, 73, 0.08);
     }
 
     .summary-row {
@@ -606,7 +605,7 @@
       justify-content: space-between;
       gap: 14px;
       padding-bottom: 12px;
-      border-bottom: 1px solid rgba(37, 99, 235, 0.08);
+      border-bottom: 1px solid rgba(35, 162, 73, 0.08);
     }
 
     .summary-row:last-child {
@@ -632,7 +631,7 @@
       min-width: 68px;
       padding: 10px 12px;
       border-radius: 16px;
-      background: rgba(37, 99, 235, 0.08);
+      background: rgba(35, 162, 73, 0.08);
       color: var(--primary-deep);
       font-size: 22px;
       font-weight: 800;
@@ -651,13 +650,13 @@
     }
 
     .metric-card .metric-label {
-      color: #5f739f;
-      font-size: 14px;
+      color: #6c8a74;
+      font-size: 13px;
       font-weight: 700;
     }
 
     .metric-card .metric-value {
-      font-size: 40px;
+      font-size: 34px;
       font-weight: 800;
       color: var(--primary-deep);
       line-height: 1;
@@ -701,7 +700,10 @@
       grid-template-columns: repeat(4, minmax(0, 1fr));
     }
 
-    .module-grid,
+    .module-grid {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
     .recommend-grid {
       grid-template-columns: repeat(4, minmax(0, 1fr));
     }
@@ -744,7 +746,7 @@
     .section-head h3,
     .panel-head h3,
     .module-head h2 {
-      font-size: 28px;
+      font-size: 24px;
       line-height: 1.28;
     }
 
@@ -754,7 +756,7 @@
 
     .panel-head h3 {
       margin: 0;
-      font-size: 24px;
+      font-size: 21px;
     }
 
     .section-head p,
@@ -770,14 +772,71 @@
 
     .section-head {
       margin-top: 4px;
+      position: relative;
+      padding-bottom: 4px;
+    }
+
+    .section-head::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -6px;
+      width: 72px;
+      height: 4px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, rgba(35, 162, 73, 0.9), rgba(146, 220, 166, 0.3));
     }
 
     .module-card {
       display: grid;
+      grid-template-rows: auto 1fr auto;
       gap: 14px;
+      min-height: 228px;
       background:
-        linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(246, 249, 255, 0.94));
-      border: 1px solid rgba(37, 99, 235, 0.12);
+        linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(246, 251, 246, 0.98));
+      border: 1px solid rgba(35, 162, 73, 0.12);
+    }
+
+    .module-card-top,
+    .module-card-foot {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+    }
+
+    .module-card-foot {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      align-items: end;
+    }
+
+    .module-score {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(35, 162, 73, 0.08);
+      color: var(--primary-deep);
+      font-size: 13px;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+
+    .module-hint {
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.65;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+    }
+
+    .module-card-foot .secondary-btn {
+      padding: 10px 14px;
+      white-space: nowrap;
     }
 
     .module-card .module-mark,
@@ -790,11 +849,11 @@
       align-items: center;
       justify-content: center;
       border-radius: 18px;
-      background: linear-gradient(135deg, rgba(37, 99, 235, 0.15), rgba(37, 99, 235, 0.08));
+      background: linear-gradient(135deg, rgba(35, 162, 73, 0.12), rgba(35, 162, 73, 0.06));
       color: var(--primary-deep);
       font-size: 16px;
       font-weight: 800;
-      box-shadow: inset 0 0 0 1px rgba(37, 99, 235, 0.08);
+      box-shadow: inset 0 0 0 1px rgba(35, 162, 73, 0.08);
     }
 
     .module-card h4,
@@ -808,6 +867,26 @@
       margin: 0;
       font-size: 24px;
       line-height: 1.35;
+    }
+
+    .module-card h4 {
+      font-size: 20px;
+      word-break: keep-all;
+    }
+
+    .module-card p {
+      margin: 0;
+      font-size: 14px;
+      line-height: 1.8;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 4;
+      overflow: hidden;
+    }
+
+    .module-card-body {
+      display: grid;
+      gap: 10px;
     }
 
     .card-meta,
@@ -830,15 +909,15 @@
       gap: 8px;
       padding: 8px 12px;
       border-radius: 999px;
-      background: rgba(37, 99, 235, 0.08);
-      color: #355189;
+      background: rgba(35, 162, 73, 0.08);
+      color: var(--primary-deep);
       font-size: 12px;
       font-weight: 800;
     }
 
     .badge.green {
-      background: var(--green-soft);
-      color: #0b7d57;
+      background: rgba(35, 162, 73, 0.14);
+      color: #1d7e37;
     }
 
     .badge.gold {
@@ -854,9 +933,9 @@
     .scene-card {
       display: grid;
       gap: 16px;
-      border: 1px solid rgba(37, 99, 235, 0.18);
+      border: 1px solid rgba(35, 162, 73, 0.18);
       background:
-        linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(244, 249, 255, 0.96));
+        linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(245, 251, 246, 0.96));
     }
 
     .scene-head {
@@ -888,9 +967,9 @@
     .scene-score {
       padding: 14px;
       border-radius: 18px;
-      background: rgba(37, 99, 235, 0.05);
+      background: rgba(35, 162, 73, 0.05);
       text-align: center;
-      box-shadow: inset 0 0 0 1px rgba(37, 99, 235, 0.08);
+      box-shadow: inset 0 0 0 1px rgba(35, 162, 73, 0.08);
     }
 
     .scene-score span {
@@ -919,8 +998,8 @@
     .progress-stage {
       padding: 16px;
       border-radius: 20px;
-      background: rgba(37, 99, 235, 0.05);
-      box-shadow: inset 0 0 0 1px rgba(37, 99, 235, 0.08);
+      background: rgba(35, 162, 73, 0.05);
+      box-shadow: inset 0 0 0 1px rgba(35, 162, 73, 0.08);
     }
 
     .scene-resource-box strong,
@@ -945,17 +1024,17 @@
       display: grid;
       gap: 18px;
       background:
-        linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(245, 249, 255, 0.96));
-      border: 1px solid rgba(37, 99, 235, 0.12);
+        linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(245, 251, 246, 0.96));
+      border: 1px solid rgba(35, 162, 73, 0.12);
     }
 
     .path-card.active {
-      border-color: rgba(37, 99, 235, 0.28);
-      box-shadow: 0 24px 48px rgba(37, 99, 235, 0.16);
+      border-color: rgba(35, 162, 73, 0.28);
+      box-shadow: 0 24px 48px rgba(35, 162, 73, 0.16);
     }
 
     .path-card.active .path-node {
-      background: rgba(37, 99, 235, 0.09);
+      background: rgba(35, 162, 73, 0.09);
     }
 
     .path-node {
@@ -969,9 +1048,9 @@
       position: relative;
       display: grid;
       gap: 18px;
-      border: 1px solid rgba(37, 99, 235, 0.16);
+      border: 1px solid rgba(35, 162, 73, 0.16);
       background:
-        linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(245, 249, 255, 0.96));
+        linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(245, 251, 246, 0.96));
     }
 
     .flow-card::after {
@@ -980,7 +1059,7 @@
       right: -18px;
       top: 50%;
       transform: translateY(-50%);
-      color: rgba(37, 99, 235, 0.44);
+      color: rgba(35, 162, 73, 0.44);
       font-size: 34px;
       font-weight: 700;
     }
@@ -1000,6 +1079,93 @@
       padding-left: 18px;
       color: var(--muted);
       line-height: 1.75;
+    }
+
+    .focus-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 2px;
+    }
+
+    .focus-card {
+      padding: 22px;
+      border-radius: 26px;
+      border: 1px solid rgba(35, 162, 73, 0.14);
+      background:
+        radial-gradient(circle at top right, rgba(170, 232, 187, 0.28), transparent 34%),
+        linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(245, 251, 246, 0.96));
+      box-shadow: 0 18px 40px rgba(28, 87, 49, 0.08);
+      display: grid;
+      gap: 16px;
+    }
+
+    .focus-card h4 {
+      margin: 0;
+      font-size: 22px;
+      color: var(--primary-deep);
+    }
+
+    .focus-card p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.75;
+    }
+
+    .focus-stat-list {
+      display: grid;
+      gap: 12px;
+    }
+
+    .focus-stat {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 10px 12px;
+      border-radius: 16px;
+      background: rgba(35, 162, 73, 0.05);
+      box-shadow: inset 0 0 0 1px rgba(35, 162, 73, 0.08);
+      color: #58735f;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .focus-stat strong {
+      color: var(--primary-deep);
+      font-size: 16px;
+    }
+
+    .inline-data-note {
+      margin-top: 18px;
+      padding: 16px 18px;
+      border-radius: 20px;
+      border: 1px solid rgba(35, 162, 73, 0.14);
+      background: linear-gradient(90deg, rgba(240, 250, 242, 0.98), rgba(255, 255, 255, 0.98));
+      color: #486a51;
+      line-height: 1.8;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .link-chip-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .link-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: rgba(35, 162, 73, 0.07);
+      color: #446a4c;
+      font-size: 13px;
+      font-weight: 700;
+      box-shadow: inset 0 0 0 1px rgba(35, 162, 73, 0.09);
     }
 
     .form-card {
@@ -1023,9 +1189,9 @@
     .field span,
     .filter-field span,
     .field-label {
-      font-size: 14px;
+      font-size: 13px;
       font-weight: 800;
-      color: #3a5690;
+      color: #466a50;
     }
 
     .field select,
@@ -1052,17 +1218,17 @@
       border: 0;
       border-radius: 999px;
       padding: 10px 14px;
-      background: rgba(37, 99, 235, 0.08);
-      color: #355189;
+      background: rgba(35, 162, 73, 0.08);
+      color: #3f6947;
       font-size: 13px;
       font-weight: 700;
       transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
     }
 
     .chip.active {
-      background: linear-gradient(135deg, #3276ff, #1b5de8);
+      background: linear-gradient(135deg, #23a349, #18813a);
       color: #ffffff;
-      box-shadow: 0 12px 24px rgba(27, 93, 232, 0.22);
+      box-shadow: 0 12px 24px rgba(35, 162, 73, 0.22);
     }
 
     .radar-result {
@@ -1082,8 +1248,8 @@
       width: 170px;
       height: 170px;
       border-radius: 50%;
-      background: conic-gradient(#2e73ff calc(var(--score) * 1%), rgba(37, 99, 235, 0.12) 0);
-      box-shadow: 0 20px 40px rgba(37, 99, 235, 0.16);
+      background: conic-gradient(#21a144 calc(var(--score) * 1%), rgba(35, 162, 73, 0.12) 0);
+      box-shadow: 0 20px 40px rgba(35, 162, 73, 0.16);
     }
 
     .score-ring::after {
@@ -1092,7 +1258,7 @@
       inset: 18px;
       border-radius: 50%;
       background: rgba(255, 255, 255, 0.96);
-      box-shadow: inset 0 0 0 1px rgba(37, 99, 235, 0.08);
+      box-shadow: inset 0 0 0 1px rgba(35, 162, 73, 0.08);
     }
 
     .score-core {
@@ -1136,21 +1302,21 @@
     .bar-item strong {
       font-size: 13px;
       font-weight: 700;
-      color: #39548b;
+      color: #44694d;
     }
 
     .bar-track {
       position: relative;
       height: 14px;
       border-radius: 999px;
-      background: rgba(37, 99, 235, 0.1);
+      background: rgba(35, 162, 73, 0.1);
       overflow: hidden;
     }
 
     .bar-fill {
       height: 100%;
       border-radius: inherit;
-      background: linear-gradient(90deg, #60a5fa, #2563eb);
+      background: linear-gradient(90deg, #8fdea0, #23a349);
     }
 
     .recommend-grid {
@@ -1162,8 +1328,8 @@
       gap: 12px;
       padding: 18px;
       border-radius: 22px;
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(246, 250, 255, 0.95));
-      border: 1px solid rgba(37, 99, 235, 0.1);
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(246, 251, 246, 0.95));
+      border: 1px solid rgba(35, 162, 73, 0.1);
       box-shadow: var(--shadow);
     }
 
@@ -1175,7 +1341,7 @@
 
     .filter-bar {
       display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
+      grid-template-columns: repeat(6, minmax(0, 1fr));
       gap: 14px;
     }
 
@@ -1200,7 +1366,7 @@
       padding: 18px;
       border-radius: 24px;
       background: rgba(255, 255, 255, 0.78);
-      box-shadow: inset 0 0 0 1px rgba(37, 99, 235, 0.08);
+      box-shadow: inset 0 0 0 1px rgba(35, 162, 73, 0.08);
     }
 
     .chart-card h4,
@@ -1228,7 +1394,7 @@
       gap: 12px;
       font-size: 13px;
       font-weight: 700;
-      color: #3a5590;
+      color: #4d6f57;
       margin-bottom: 8px;
     }
 
@@ -1245,8 +1411,8 @@
     .heat-item {
       padding: 16px;
       border-radius: 20px;
-      background: rgba(37, 99, 235, 0.05);
-      box-shadow: inset 0 0 0 1px rgba(37, 99, 235, 0.08);
+      background: rgba(35, 162, 73, 0.05);
+      box-shadow: inset 0 0 0 1px rgba(35, 162, 73, 0.08);
     }
 
     .heat-head,
@@ -1274,16 +1440,16 @@
     .company-card {
       display: grid;
       gap: 14px;
-      border: 1px solid rgba(37, 99, 235, 0.12);
+      border: 1px solid rgba(35, 162, 73, 0.12);
       background:
-        linear-gradient(180deg, rgba(255, 255, 255, 0.97), rgba(246, 249, 255, 0.95));
+        linear-gradient(180deg, rgba(255, 255, 255, 0.97), rgba(246, 251, 246, 0.95));
     }
 
     .policy-card.highlighted,
     .case-card.highlighted,
     .company-card.highlighted {
-      border-color: rgba(37, 99, 235, 0.3);
-      box-shadow: 0 18px 40px rgba(37, 99, 235, 0.18);
+      border-color: rgba(35, 162, 73, 0.3);
+      box-shadow: 0 18px 40px rgba(35, 162, 73, 0.18);
     }
 
     .card-title-box {
@@ -1311,8 +1477,8 @@
     .key-cell {
       padding: 14px;
       border-radius: 18px;
-      background: rgba(37, 99, 235, 0.05);
-      box-shadow: inset 0 0 0 1px rgba(37, 99, 235, 0.08);
+      background: rgba(35, 162, 73, 0.05);
+      box-shadow: inset 0 0 0 1px rgba(35, 162, 73, 0.08);
     }
 
     .key-cell span {
@@ -1342,17 +1508,17 @@
       border-radius: 22px;
       background: rgba(255, 255, 255, 0.88);
       box-shadow: var(--shadow);
-      border: 1px solid rgba(37, 99, 235, 0.08);
+      border: 1px solid rgba(35, 162, 73, 0.08);
     }
 
     .step-card.done {
-      border-color: rgba(32, 167, 121, 0.22);
-      box-shadow: 0 18px 40px rgba(32, 167, 121, 0.14);
+      border-color: rgba(35, 162, 73, 0.18);
+      box-shadow: 0 18px 40px rgba(35, 162, 73, 0.12);
     }
 
     .step-card.active {
-      border-color: rgba(37, 99, 235, 0.24);
-      box-shadow: 0 22px 48px rgba(37, 99, 235, 0.16);
+      border-color: rgba(35, 162, 73, 0.24);
+      box-shadow: 0 22px 48px rgba(35, 162, 73, 0.16);
     }
 
     .step-index {
@@ -1362,7 +1528,7 @@
       align-items: center;
       justify-content: center;
       border-radius: 14px;
-      background: rgba(37, 99, 235, 0.08);
+      background: rgba(35, 162, 73, 0.08);
       color: var(--primary-deep);
       font-weight: 800;
     }
@@ -1395,7 +1561,7 @@
       top: 24px;
       bottom: -12px;
       width: 2px;
-      background: rgba(37, 99, 235, 0.12);
+      background: rgba(35, 162, 73, 0.12);
     }
 
     .timeline-list .timeline-item:last-child::after {
@@ -1405,7 +1571,7 @@
     .empty-card {
       text-align: center;
       background: rgba(255, 255, 255, 0.76);
-      border: 1px dashed rgba(37, 99, 235, 0.18);
+      border: 1px dashed rgba(35, 162, 73, 0.18);
     }
 
     .empty-card strong {
@@ -1443,8 +1609,8 @@
     .modal-aside {
       padding: 34px 28px;
       background:
-        radial-gradient(circle at 20% 20%, rgba(135, 176, 255, 0.28), transparent 28%),
-        linear-gradient(180deg, #215ddd, #173fb4);
+        radial-gradient(circle at 20% 20%, rgba(173, 232, 189, 0.3), transparent 28%),
+        linear-gradient(180deg, #1f9d44, #177937);
       color: #ffffff;
       display: grid;
       gap: 18px;
@@ -1498,13 +1664,13 @@
       border: 0;
       border-radius: 999px;
       padding: 10px 14px;
-      background: rgba(37, 99, 235, 0.08);
-      color: #355189;
+      background: rgba(35, 162, 73, 0.08);
+      color: #356443;
       font-weight: 700;
     }
 
     .tab-btn.active {
-      background: linear-gradient(135deg, #3276ff, #1b5de8);
+      background: linear-gradient(135deg, #23a349, #18813a);
       color: #ffffff;
     }
 
@@ -1533,14 +1699,14 @@
       border: 0;
       border-radius: 999px;
       padding: 10px 14px;
-      background: rgba(37, 99, 235, 0.08);
-      color: #355189;
+      background: rgba(35, 162, 73, 0.08);
+      color: #356443;
       font-weight: 700;
     }
 
     .role-pill.active {
-      background: rgba(32, 167, 121, 0.12);
-      color: #0b7d57;
+      background: linear-gradient(135deg, rgba(35, 162, 73, 0.14), rgba(146, 220, 166, 0.18));
+      color: #1e8138;
     }
 
     .drawer {
@@ -1565,7 +1731,7 @@
       justify-content: space-between;
       gap: 14px;
       padding-bottom: 14px;
-      border-bottom: 1px solid rgba(37, 99, 235, 0.08);
+      border-bottom: 1px solid rgba(35, 162, 73, 0.08);
       margin-bottom: 18px;
     }
 
@@ -1584,13 +1750,33 @@
       max-width: 420px;
       padding: 14px 16px;
       border-radius: 18px;
-      background: rgba(14, 37, 87, 0.94);
+      background: rgba(22, 76, 39, 0.94);
       color: #ffffff;
-      box-shadow: 0 22px 44px rgba(11, 30, 74, 0.24);
+      box-shadow: 0 22px 44px rgba(18, 64, 31, 0.24);
       opacity: 0;
       transform: translateY(12px);
       pointer-events: none;
       transition: opacity 0.2s ease, transform 0.2s ease;
+    }
+
+    .overview-bottom {
+      display: grid;
+      gap: 18px;
+    }
+
+    .overview-workbench-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .overview-workbench-grid .workbench-card {
+      min-height: 148px;
+      padding: 18px;
+      border-radius: 22px;
+      border: 1px solid rgba(35, 162, 73, 0.12);
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(246, 251, 246, 0.96));
+      box-shadow: var(--shadow);
     }
 
     .toast.show {
@@ -1629,6 +1815,8 @@
 
       .module-grid,
       .metric-row,
+      .overview-workbench-grid,
+      .focus-grid,
       .flow-grid,
       .four-col,
       .three-col,
@@ -1656,6 +1844,8 @@
       .two-col,
       .module-grid,
       .metric-row,
+      .overview-workbench-grid,
+      .focus-grid,
       .filter-bar,
       .scene-grid,
       .path-grid,
@@ -1830,6 +2020,16 @@
 
           <div class="section-head">
             <div>
+              <div class="section-kicker">Live Data Focus</div>
+              <h3>当前热点结构</h3>
+              <p>把这批政策、平台、案例和企业样本中最能指导选题与行动的结构先摆在首页，减少反复翻找成本。</p>
+            </div>
+          </div>
+          <div class="focus-grid" id="dataFocusGrid"></div>
+          <div class="inline-data-note" id="dataNoteRow"></div>
+
+          <div class="section-head">
+            <div>
               <div class="section-kicker">Scene Cards</div>
               <h3>场景化推荐卡片</h3>
               <p>把常见的大学生绿色创业起点拆成三类典型场景，进入平台时可以直接套用，再在项目雷达台里继续细化。</p>
@@ -1855,7 +2055,7 @@
           </div>
           <div class="flow-grid" id="flowGrid"></div>
 
-          <div class="two-col">
+          <div class="overview-bottom">
             <article class="panel">
               <div class="panel-head">
                 <div>
@@ -1873,7 +2073,7 @@
                   <p>收藏、申请、合作推进和下一个动作会统一沉淀在这里。</p>
                 </div>
               </div>
-              <div class="workbench-stack" id="overviewWorkbench"></div>
+              <div class="workbench-stack overview-workbench-grid" id="overviewWorkbench"></div>
             </article>
           </div>
         </section>
@@ -2126,6 +2326,7 @@
                 </div>
               </div>
               <div class="flow-grid" id="policyFlowGrid"></div>
+              <div class="link-chip-row" id="policyPlatformLinks"></div>
             </article>
           </div>
 
@@ -2475,10 +2676,58 @@
 
       const DATA = {
         metrics: [
-          { label: "已接入企业项目", value: "419", note: "覆盖绿色制造、循环经济、低碳治理等方向" },
-          { label: "数字 + 绿色企业", value: "167", note: "更适合大学生团队对标与合作接触" },
-          { label: "结构化政策条目", value: "622", note: "按地区、层级、支持类型和适用阶段筛选" },
-          { label: "案例与灵感素材", value: "369", note: "可直接用于方向判断、原型对标和答辩表达" }
+          { label: "企业项目样本", value: "419", note: "企业项目库已覆盖节能环保装备、循环利用、水处理、储能等核心方向" },
+          { label: "数字 + 绿色企业", value: "167", note: "更适合大学生团队做对标、约访和试点合作" },
+          { label: "建议分析版政策", value: "622", note: "来源于政策正文抽取与标准化清洗后的高可用结果" },
+          { label: "案例灵感样本", value: "369", note: "含数字 + 绿色案例，可直接反推问题、技术和产品结构" }
+        ],
+        focusBoards: [
+          {
+            title: "可用政策支持热点",
+            note: "从 BI 可用聚合结果里优先挑出最常被大学生创业团队实际用到的支持类型。",
+            stats: [
+              { label: "招聘岗位", value: "1317" },
+              { label: "培训指导", value: "741" },
+              { label: "补贴资助", value: "604" },
+              { label: "赛事活动", value: "514" }
+            ]
+          },
+          {
+            title: "高频平台服务入口",
+            note: "平台主表和服务明细表里最值得优先接入首页导航的服务类别。",
+            stats: [
+              { label: "创业担保贷款", value: "43" },
+              { label: "政策查询", value: "23" },
+              { label: "创业补贴/资助", value: "12" },
+              { label: "求职招聘", value: "9" }
+            ]
+          },
+          {
+            title: "数字绿色案例焦点",
+            note: "数字 + 绿色案例更集中在生态保护、节能降碳与水环境治理这些问题域。",
+            stats: [
+              { label: "生态保护", value: "64" },
+              { label: "节能降碳", value: "40" },
+              { label: "水资源/水环境", value: "11" },
+              { label: "农业与乡村生态", value: "10" }
+            ]
+          },
+          {
+            title: "企业赛道热度",
+            note: "企业项目库里样本最集中的几类赛道，更适合作为选题与合作起点。",
+            stats: [
+              { label: "节能环保装备", value: "115" },
+              { label: "固废回收循环", value: "84" },
+              { label: "水环境与水处理", value: "66" },
+              { label: "环保材料", value: "48" }
+            ]
+          }
+        ],
+        inlineNotes: [
+          "政策正文标准化后共拆解出 8907 个支持项字段，可继续用于做支持类型、金额和办理方式解释。",
+          "平台入口与服务明细已整理 146 条，可优先对接政策查询、贷款、补贴和赛事报名入口。",
+          "企业样本重点集中在广东、上海、江苏、北京、浙江，适合做区域热力和合作切入建议。",
+          "数字 + 绿色案例高频技术手段集中在平台/系统、智能制造、人工智能、大数据与物联网。"
         ],
         scenarios: [
           {
@@ -2495,7 +2744,7 @@
             resources: ["广东省职业技能培训和评价服务平台", "粤就业", "广东就业服务（小程序）"],
             profile: {
               projectName: "校园低碳服务试点",
-              track: "循环经济与回收",
+              track: "固废回收与循环利用",
               region: "广东",
               stage: "筹备阶段",
               digital: "具备基础原型",
@@ -2518,7 +2767,7 @@
             resources: ["粤就业公共领域服务云平台", "广东就业服务（小程序）", "青年创业训练营"],
             profile: {
               projectName: "",
-              track: "碳管理与数字治理",
+              track: "碳管理与低碳服务",
               region: "广东",
               stage: "创意阶段",
               digital: "起步中",
@@ -2541,7 +2790,7 @@
             resources: ["广东公共就业服务云平台", "大学生创业赛事平台", "地方孵化器入口"],
             profile: {
               projectName: "校园能耗可视化平台",
-              track: "智能节能与能效服务",
+              track: "节能环保装备",
               region: "江苏",
               stage: "初步落地",
               digital: "数据与产品能力较强",
@@ -2634,230 +2883,271 @@
           }
         ],
         tracks: [
-          "循环经济与回收",
-          "智能节能与能效服务",
-          "碳管理与数字治理",
-          "水环境与生态修复",
-          "绿色农业与乡村科技",
-          "环保新材料与装备",
-          "新能源与储能应用"
+          "节能环保装备",
+          "固废回收与循环利用",
+          "水环境与水处理",
+          "环保材料",
+          "新能源与储能",
+          "农业绿色科技",
+          "碳管理与低碳服务",
+          "绿色算力与基础设施"
         ],
-        regions: ["广东", "江苏", "浙江", "上海", "北京", "四川", "湖北", "陕西"],
-        financeStages: ["不限", "未披露", "种子轮", "天使轮", "Pre-A", "A 轮", "成熟企业"],
+        regions: ["广东", "江苏", "浙江", "上海", "北京", "四川", "山东", "河南"],
+        financeStages: ["不限", "未融资", "种子轮", "天使轮", "Pre-A轮", "A轮", "B轮", "成熟企业"],
         policyLevels: ["不限", "国家", "省级", "市级", "区县"],
-        policyTypes: ["不限", "补贴资助", "贷款担保", "平台服务", "培训辅导", "场地孵化"],
+        policyTypes: ["不限", "补贴资助", "贷款担保", "平台服务", "培训辅导", "场地孵化", "赛事活动"],
         fitLevels: ["不限", "高匹配", "中匹配", "观察"],
-        scenes: ["不限", "校园场景", "社区服务", "产业园区", "公共治理"],
-        techs: ["不限", "人工智能", "数据分析", "物联网", "平台系统", "数字孪生", "智能硬件"],
+        scenes: ["不限", "校园场景", "社区服务", "产业园区", "公共治理", "乡村场景"],
+        techs: ["不限", "人工智能", "数据分析", "物联网", "平台系统", "数字孪生", "智能制造", "智能硬件"],
         stages: ["创意阶段", "筹备阶段", "初步落地", "试点推进"],
         digitals: ["起步中", "具备基础原型", "数据与产品能力较强"],
         teamSizes: ["1-3 人", "4-6 人", "7 人以上"],
         needs: ["政策信息", "资金支持", "技术合作", "市场验证", "孵化服务", "导师辅导"],
         marketTracks: [
-          { label: "循环经济与回收", value: 88 },
-          { label: "智能节能与能效服务", value: 84 },
-          { label: "碳管理与数字治理", value: 81 },
-          { label: "水环境与生态修复", value: 76 },
-          { label: "环保新材料与装备", value: 72 },
-          { label: "绿色农业与乡村科技", value: 65 }
+          { label: "节能环保装备", value: 115 },
+          { label: "固废回收与循环利用", value: 84 },
+          { label: "水环境与水处理", value: 66 },
+          { label: "环保材料", value: 48 },
+          { label: "新能源与储能", value: 44 },
+          { label: "农业绿色科技", value: 42 },
+          { label: "碳管理与低碳服务", value: 24 },
+          { label: "绿色算力与基础设施", value: 5 }
         ],
         marketFinances: [
-          { label: "未披露", value: 191 },
-          { label: "种子轮", value: 38 },
+          { label: "未融资", value: 191 },
+          { label: "未披露", value: 86 },
+          { label: "已融资未披露", value: 30 },
           { label: "天使轮", value: 24 },
-          { label: "Pre-A", value: 18 },
-          { label: "A 轮", value: 12 },
-          { label: "成熟企业", value: 136 }
+          { label: "Pre-A轮", value: 12 },
+          { label: "A轮", value: 28 },
+          { label: "种子轮", value: 11 }
         ],
         regionHeat: [
-          { region: "广东", heat: 92, companies: 58, digital: 28, insight: "校内低碳服务、回收平台和政校协同机会更集中。" },
-          { region: "江苏", heat: 87, companies: 52, digital: 25, insight: "节能设备、工业能效和示范试点更容易找到企业样本。" },
-          { region: "浙江", heat: 85, companies: 49, digital: 24, insight: "平台型绿色项目和数字治理场景的转化更顺畅。" },
-          { region: "上海", heat: 81, companies: 43, digital: 22, insight: "更适合做数据平台、碳管理和高价值合作展示。" },
-          { region: "北京", heat: 79, companies: 41, digital: 21, insight: "科研背景强，适合做科技成果转化和政策对接。" },
-          { region: "四川", heat: 74, companies: 32, digital: 15, insight: "生态保护、农业科技和区域试点更具场景优势。" }
+          { region: "广东", heat: 92, companies: 58, digital: 31, insight: "政策入口更密、平台服务更全，适合校园服务、回收平台和快速试点。" },
+          { region: "江苏", heat: 88, companies: 41, digital: 19, insight: "节能装备、工业能效与新能源方向样本更集中，适合做应用型合作。" },
+          { region: "上海", heat: 86, companies: 45, digital: 34, insight: "数字平台和碳管理表达更强，适合做高价值展示、路演和企业协同。" },
+          { region: "北京", heat: 83, companies: 38, digital: 24, insight: "科研与平台型企业资源较密集，适合科技成果转化与导师联动。" },
+          { region: "浙江", heat: 81, companies: 31, digital: 18, insight: "平台化原型和数字治理切入更顺畅，适合做产品化服务。" },
+          { region: "山东", heat: 76, companies: 47, digital: 16, insight: "节能环保装备和固废循环样本较多，适合设备和制造协同方向。" }
         ],
         opportunities: [
           {
             title: "校园试点型入口",
-            summary: "如果你的数字能力还在起步中，优先选择校园回收、能耗可视化、绿色积分等可低成本验证的方向。",
-            tags: ["门槛较低", "验证快", "便于路演"]
+            summary: "如果团队还在早期，优先选择校园回收、能耗可视化、低碳积分和绿色生活服务这类低成本验证方向。",
+            tags: ["门槛较低", "验证快", "便于沉淀第一批用户数据"]
           },
           {
             title: "校企协同型入口",
-            summary: "如果已有基础原型，可以优先找企业开放试点或导师牵头合作，建立第一批真实场景数据。",
-            tags: ["真实需求", "有合作线索", "可沉淀案例"]
+            summary: "如果已有基础原型，优先对接开放场景的企业需求，争取拿到第一批真实试点和行业反馈。",
+            tags: ["真实需求", "有合作线索", "可沉淀样板案例"]
           },
           {
             title: "政策申报型入口",
-            summary: "如果项目已较成熟，可围绕地方补贴、创业贷款和孵化平台同步推进，提高落地效率。",
-            tags: ["政策驱动", "适合落地", "适合申报"]
+            summary: "如果目标是快速获得补贴、平台和赛事资源，就要同步准备政策清单、办理入口和路演材料。",
+            tags: ["政策驱动", "资源联动", "适合申报"]
           }
+        ],
+        policyJourney: [
+          {
+            step: "筛",
+            title: "先锁定高匹配政策",
+            text: "优先从补贴资助、培训指导、赛事活动三类里筛出与你当前阶段最相关的条目。",
+            links: ["补贴资助 604", "培训指导 741", "赛事活动 514"]
+          },
+          {
+            step: "办",
+            title: "进入办理与服务平台",
+            text: "把政策名称继续对应到真实办理入口，不再停留在“知道有政策”。",
+            links: ["广东公共就业服务云平台", "全国大学生创业服务网"]
+          },
+          {
+            step: "接",
+            title: "接上赛事与展示通道",
+            text: "同步接入赛事、训练营和展示通道，补齐材料打磨、曝光和评审反馈。",
+            links: ["中国“互联网+”大学生创新创业大赛", "中国创新创业挑战赛"]
+          },
+          {
+            step: "推",
+            title: "沉淀为行动清单",
+            text: "把资金、平台、赛事和时间节点合并成一张能立刻执行的推进表。",
+            links: ["材料清单", "办理入口", "下一步动作"]
+          }
+        ],
+        platformEntries: [
+          "广东省职业技能培训和评价服务平台",
+          "广东公共就业服务云平台",
+          "全国大学生创业服务网",
+          "广东创业创新大赛平台"
+        ],
+        eventEntries: [
+          "中国“互联网+”大学生创新创业大赛",
+          "中国创新创业挑战赛",
+          "上海社会组织公益创业大赛"
         ],
         policies: [
           {
             id: "policy-gd-1",
-            title: "广东省高校毕业生创业扶持补贴政策",
+            title: "关于印发《2026年广东省高校毕业生就业创业十大行动方案》的通知",
             region: "广东",
             level: "省级",
             type: "补贴资助",
-            target: "高校毕业生、大学生创业团队",
-            amount: "最高 3 万元启动补贴",
-            stage: "创意阶段 / 筹备阶段",
-            fitBase: 91,
-            platform: "广东公共就业服务平台",
-            event: "大学生创新创业赛事配套申报",
-            summary: "适合刚起步或已组建团队的学生项目，用于启动费用、租金和运营支出。",
-            tips: ["优先准备团队身份材料", "建议同步查看地方孵化器入口", "适合与创业贷款配套申请"]
+            target: "大学生、高校毕业生、离校未就业毕业生",
+            amount: "补贴资助、担保贷款、税费优惠等组合支持",
+            stage: "创意阶段 / 筹备阶段 / 初步落地",
+            fitBase: 93,
+            platform: "广东公共就业服务云平台",
+            event: "广东创业创新大赛平台",
+            summary: "适合作为广东地区大学生团队的政策总入口，既能看补贴，也能继续接平台、培训和赛事资源。",
+            tips: ["先按补贴、贷款、培训拆成三张清单", "同步查看办理入口和时间节点", "适合和校园试点方案一起准备"]
           },
           {
             id: "policy-js-1",
-            title: "江苏省大学生创业贷款贴息与创业担保支持",
+            title: "江苏：十大行动帮促高校毕业生就业创业",
             region: "江苏",
             level: "省级",
-            type: "贷款担保",
-            target: "大学生创业团队、初创企业",
-            amount: "贷款额度最高 300 万元",
+            type: "培训辅导",
+            target: "高校毕业生、青年创业团队",
+            amount: "培训指导、平台服务、岗位开发与实训机会组合支持",
             stage: "筹备阶段 / 初步落地",
             fitBase: 88,
             platform: "江苏智慧人社",
             event: "创业训练营与项目路演联动",
-            summary: "更适合已有项目结构、预算计划和落地路径的团队，用于放大现金流能力。",
-            tips: ["建议准备阶段预算表", "适合与能效、循环经济方向结合", "申报前同步做市场验证材料"]
+            summary: "适合准备从校园项目走向落地的团队，能把培训、岗位、实训和创业服务串起来看。",
+            tips: ["优先把项目阶段和团队身份匹配清楚", "适合与节能装备、工业能效方向联动", "提前准备项目简介和落地场景说明"]
           },
           {
             id: "policy-zj-1",
-            title: "浙江省大学生创业场地与孵化支持计划",
-            region: "浙江",
+            title: "山东发布2025届高校毕业生就业创业工作方案",
+            region: "山东",
             level: "省级",
-            type: "场地孵化",
-            target: "高校团队、青年创业项目",
-            amount: "场地减免与入驻服务包",
-            stage: "创意阶段 / 筹备阶段",
-            fitBase: 84,
-            platform: "浙江政务服务网",
-            event: "青年创业项目展示周",
-            summary: "适合需要办公场地、孵化服务和导师辅导的团队，尤其适合平台型和服务型项目。",
-            tips: ["如果缺市场验证可优先申请", "适合校地合作项目", "入驻后可继续衔接培训与赛事"]
+            type: "补贴资助",
+            target: "大学生、高校毕业生、离校未就业毕业生",
+            amount: "补贴资助、创业贷款、场地孵化、社保支持组合包",
+            stage: "创意阶段 / 筹备阶段 / 初步落地",
+            fitBase: 86,
+            platform: "山东公共就业人才服务平台",
+            event: "创新创业赛事申报与展示通道",
+            summary: "适合需要把补贴、贷款和孵化场地同步梳理清楚的团队，尤其适合资源回收和节能制造方向。",
+            tips: ["先看支持对象和时间窗口", "整理项目预算与应用场景", "适合与地方孵化器一起推进"]
           },
           {
             id: "policy-sh-1",
-            title: "上海市数字绿色创新项目培育政策",
-            region: "上海",
-            level: "市级",
-            type: "平台服务",
-            target: "科技型、数字化绿色项目",
-            amount: "项目培育与资源对接服务",
-            stage: "初步落地 / 试点推进",
-            fitBase: 86,
-            platform: "一网通办",
-            event: "数字绿色路演专场",
-            summary: "适合已有原型、希望做校外合作和示范展示的团队。",
-            tips: ["建议同步准备产品原型或看板", "更适合数字治理和平台项目", "适合与企业合作场景绑定"]
+            title: "天津：明确服务保障民生重点任务",
+            region: "天津",
+            level: "省级",
+            type: "补贴资助",
+            target: "高校毕业生、青年、小微企业",
+            amount: "创业担保贷款、创业资助、见习实训、培训课程等支持",
+            stage: "创意阶段 / 筹备阶段 / 初步落地",
+            fitBase: 80,
+            platform: "天津就业创业服务平台",
+            event: "地方创业服务活动与项目展示",
+            summary: "适合作为综合支持型政策对照项，帮助用户理解一条政策里可能同时包含资金、培训和实训支持。",
+            tips: ["适合做政策结构化示例", "关注支持对象与办理方式字段", "可用于对比地方政策差异"]
           },
           {
             id: "policy-bj-1",
-            title: "北京高校科技成果转化与青年创业辅导",
-            region: "北京",
-            level: "市级",
-            type: "培训辅导",
-            target: "高校创新团队",
-            amount: "导师辅导 + 平台对接",
+            title: "广西壮族自治区出实招促高校毕业生高质量就业",
+            region: "广西",
+            level: "省级",
+            type: "平台服务",
+            target: "高校毕业生、青年、小微企业",
+            amount: "租金场地、税费优惠、社保补贴、见习实训等综合支持",
             stage: "创意阶段 / 筹备阶段",
             fitBase: 80,
-            platform: "北京高校就业创业平台",
-            event: "高校科技成果转化周",
-            summary: "适合技术较强但项目表达、商业化和对接能力较弱的团队。",
-            tips: ["适合科研成果转创业", "建议与灵感图谱联动看案例", "适合先补项目叙事和展示材料"]
+            platform: "广西就业创业服务平台",
+            event: "青年创业训练营与地方赛事",
+            summary: "适合作为“政策 + 平台 + 实训”联动型条目，帮助团队快速理解从政策到服务入口的路径。",
+            tips: ["适合做跨地区比较", "优先关注租金和场地支持", "可与导师辅导和训练营一起打包查看"]
           },
           {
             id: "policy-sc-1",
-            title: "四川省绿色乡村科技创业扶持清单",
-            region: "四川",
+            title: "广东省人民政府关于印发广东省进一步稳定和促进就业若干政策措施的通知",
+            region: "广东",
             level: "省级",
-            type: "补贴资助",
-            target: "绿色农业与乡村科技团队",
-            amount: "最高 20 万元项目支持",
-            stage: "筹备阶段 / 初步落地",
-            fitBase: 78,
-            platform: "四川省政务服务平台",
-            event: "乡村振兴双创赛道",
-            summary: "适合农业科技、生态修复和乡村场景项目，强调试点示范与区域联动。",
-            tips: ["适合区域试点项目", "先准备场景说明和样机图片", "可叠加乡村振兴赛事资源"]
+            type: "贷款担保",
+            target: "高校毕业生、青年创业者、初创企业",
+            amount: "含贷款、补贴、税费、社保等多类支持",
+            stage: "筹备阶段 / 初步落地 / 试点推进",
+            fitBase: 87,
+            platform: "广东公共就业服务云平台",
+            event: "地方路演与孵化活动联动",
+            summary: "更适合已有团队和初步产品的项目，把创业担保贷款、补贴和社保等支持一起看清楚。",
+            tips: ["适合与项目预算表一起阅读", "优先筛贷款担保和补贴资助", "适合进入合作试点前做资金准备"]
           }
         ],
         cases: [
           {
             id: "case-1",
-            title: "AI 湿地鸟类识别与生态巡护平台",
-            school: "北京工商大学",
-            award: "国家级一等奖",
+            title: "蓝色“碳”索：中国滨海蓝碳增汇与治理共同体构建",
+            school: "数字+绿色案例库",
+            award: "精选对标案例",
             problem: "生态保护",
-            tech: "人工智能",
+            tech: "数据分析",
             scene: "公共治理",
-            route: "智能识别 → 数据平台 → 巡护协同",
-            summary: "通过图像识别和数据平台协同提升巡护效率，适合对标“监测 + 平台”的数字绿色项目结构。",
-            prototype: "可转化为校园动植物识别、环境异常监测、公共设施巡检类原型。"
+            route: "蓝碳监测 → 数据评估 → 治理协同",
+            summary: "把生态治理与数据评估结合，适合对标“监测 + 平台 + 协同治理”的数字绿色项目结构。",
+            prototype: "可转化为校园湿地监测、生态修复进度看板、低碳治理地图等原型。"
           },
           {
             id: "case-2",
-            title: "动力电池 AI 质检与回收分级系统",
-            school: "西安交通大学",
-            award: "国家级特等奖",
+            title: "破局“废盐围城”：工业副产盐资源化利用平台",
+            school: "数字+绿色案例库",
+            award: "精选对标案例",
             problem: "循环经济",
-            tech: "人工智能",
+            tech: "平台系统",
             scene: "产业园区",
-            route: "图像检测 → 分级模型 → 回收平台",
-            summary: "把智能检测和回收利用结合，适合对标循环经济、设备检测和产业协同方向。",
-            prototype: "可转化为校园设备维修、回收分类和高价值材料识别的轻量级版本。"
+            route: "副产物识别 → 资源分流 → 循环利用平台",
+            summary: "把副产物分类、资源化和产业协同结合，适合对标循环经济、回收平台和产业联动方向。",
+            prototype: "可转化为校园回收、可再生资源分拣和高价值物料去向可视化的轻量版本。"
           },
           {
             id: "case-3",
-            title: "楼宇能耗采集与节能决策看板",
-            school: "东南大学",
-            award: "省级金奖",
+            title: "别让“绿能”变“绿患”：新能源储能安全监测与预警",
+            school: "数字+绿色案例库",
+            award: "精选对标案例",
             problem: "节能降碳",
-            tech: "数据分析",
-            scene: "校园场景",
-            route: "传感采集 → 能耗分析 → 决策看板",
-            summary: "适合大学生团队切入的低门槛方向，既有校园场景，也容易做出可视化原型。",
-            prototype: "可以从宿舍楼、实验楼、图书馆等典型场景先做试点。"
+            tech: "人工智能",
+            scene: "产业园区",
+            route: "储能监测 → 异常识别 → 风险预警",
+            summary: "把新能源设备与安全预警结合，适合对标“设备监测 + AI 判断 + 看板告警”的表达方式。",
+            prototype: "可转化为实验室电池柜、校园储能设备或机房能耗异常预警原型。"
           },
           {
             id: "case-4",
-            title: "智慧灌溉与农田环境数据平台",
-            school: "四川农业大学",
-            award: "国家级二等奖",
+            title: "借力逐绿，点土生金：盐碱地数字治理与智慧种植方案",
+            school: "数字+绿色案例库",
+            award: "精选对标案例",
             problem: "绿色农业与乡村科技",
             tech: "物联网",
-            scene: "产业园区",
-            route: "传感器网络 → 环境数据 → 农事调度",
-            summary: "把物联网和农业场景结合，适合做区域化试点和乡村振兴类项目。",
-            prototype: "适合转化为微型传感网络、示范田看板和数据预警页面。"
+            scene: "乡村场景",
+            route: "土壤感知 → 种植决策 → 数字治理",
+            summary: "把农业环境数据、土壤治理和种植方案结合，适合乡村场景与农业科技方向项目。",
+            prototype: "适合转化为示范田监测、乡村环境看板和农事预警页面。"
           },
           {
             id: "case-5",
-            title: "碳足迹记录与绿色消费激励系统",
-            school: "浙江大学",
-            award: "省级银奖",
-            problem: "碳管理与数字治理",
-            tech: "平台系统",
-            scene: "校园场景",
-            route: "行为数据 → 碳积分 → 消费激励",
-            summary: "很适合学生团队做 MVP，通过积分与平台联动形成用户参与闭环。",
-            prototype: "可快速转成小程序、校园积分系统或绿色社团运营工具。"
+            title: "万物栖境 自然创生：城市生境监测与生态修复协同",
+            school: "数字+绿色案例库",
+            award: "精选对标案例",
+            problem: "生态保护",
+            tech: "物联网",
+            scene: "公共治理",
+            route: "生境监测 → 数据回传 → 修复协同",
+            summary: "把环境监测与生境修复结合，适合对标城市治理、生态服务和传感网络类项目。",
+            prototype: "可快速转成校园生境观测、小型绿地修复记录和多点数据采集看板。"
           },
           {
             id: "case-6",
-            title: "河道水质监测与风险预警地图",
-            school: "中国海洋大学",
-            award: "国家级一等奖",
+            title: "“锁边固沙，荒漠生金”：生态修复与环境数据采集方案",
+            school: "数字+绿色案例库",
+            award: "精选对标案例",
             problem: "水环境与生态修复",
-            tech: "数字孪生",
+            tech: "平台系统",
             scene: "公共治理",
-            route: "监测设备 → 风险预警 → 地图可视化",
-            summary: "适合对标“数据监测 + 可视化 + 公共决策”的完整表达方式。",
-            prototype: "可简化为校园水体、园区管网或小型生态水域监测项目。"
+            route: "环境采集 → 风险判断 → 修复反馈",
+            summary: "适合对标“环境采集 + 过程管理 + 治理反馈”的完整表达方式，可迁移到多类生态修复场景。",
+            prototype: "可简化为校园水体、边坡绿化、园区环境监测或社区生态微更新项目。"
           }
         ],
         companies: [
@@ -2865,90 +3155,95 @@
             id: "company-1",
             name: "双登股份",
             city: "江苏",
-            track: "新能源与储能应用",
+            track: "新能源与储能",
             finance: "成熟企业",
             modes: ["技术合作", "场景试点"],
             stage: "初步落地",
-            summary: "关注储能、能效与低碳监测场景，适合对接能源数据看板、设备管理和节能优化类项目。",
+            summary: "企业样本集中在储能、能效与低碳监测场景，适合对接能源数据看板、设备管理和节能优化类项目。",
             offer: ["开放示范场景", "提供业务导师", "可联合路演"],
             demand: "希望寻找擅长数据可视化、能效分析和校园/楼宇场景验证的学生团队。"
           },
           {
             id: "company-2",
-            name: "华源泰盟",
-            city: "北京",
-            track: "智能节能与能效服务",
-            finance: "A 轮",
+            name: "擎天工业互联网",
+            city: "江苏",
+            track: "节能环保装备",
+            finance: "成熟企业",
             modes: ["联合开发", "导师辅导"],
             stage: "筹备阶段",
-            summary: "关注楼宇节能、设备状态分析和数字化节能服务，更适合已有原型的学生团队。",
+            summary: "更偏工业节能、设备管理和工业互联网协同，适合把监测、分析和可视化看板接到真实制造场景。",
             offer: ["提供行业问题清单", "对接节能顾问", "共创展示材料"],
-            demand: "寻找能耗看板、设备预警和轻量 SaaS 原型方向的团队。"
+            demand: "寻找能耗看板、设备预警和轻量 SaaS 原型方向的学生团队。"
           },
           {
             id: "company-3",
-            name: "粤绿数据科技",
-            city: "广东",
-            track: "碳管理与数字治理",
-            finance: "Pre-A",
+            name: "碳基线 Carbon Baseline",
+            city: "上海",
+            track: "碳管理与低碳服务",
+            finance: "未融资",
             modes: ["场景试点", "市场验证"],
             stage: "筹备阶段",
-            summary: "聚焦园区碳数据采集、企业碳核算和低碳治理平台，适合数字平台型团队。",
-            offer: ["开放园区试点需求", "共享行业标签体系", "参与共同路演"],
+            summary: "聚焦企业碳盘查、减排路径和数字化管理工具，适合数据平台、碳核算和低碳服务方向团队。",
+            offer: ["开放行业问题库", "共享标签体系", "参与共同路演"],
             demand: "寻找擅长数据分析、平台产品和碳核算表达的学生项目。"
           },
           {
             id: "company-4",
-            name: "清源循环",
+            name: "TREE3",
             city: "上海",
-            track: "循环经济与回收",
-            finance: "天使轮",
+            track: "绿色算力与基础设施",
+            finance: "未融资",
             modes: ["场景试点", "联合开发"],
             stage: "创意阶段",
-            summary: "围绕回收网络和循环利用场景，希望与校园端合作验证回收效率和激励机制。",
-            offer: ["共享回收流程经验", "支持校园回收试点", "提供行业数据故事"],
-            demand: "希望找到愿意做校园回收平台、绿色积分系统和运营增长实验的团队。"
+            summary: "聚焦绿色算力、液冷与基础设施方向，适合做高技术表达、园区场景展示和设备协同原型。",
+            offer: ["共享产品场景", "支持展示验证", "提供行业故事素材"],
+            demand: "希望找到愿意做算力可视化、能耗管理和绿色基础设施表达的团队。"
           },
           {
             id: "company-5",
-            name: "蓝境水科",
-            city: "浙江",
-            track: "水环境与生态修复",
-            finance: "种子轮",
+            name: "埃睿迪",
+            city: "北京",
+            track: "水环境与水处理",
+            finance: "B轮",
             modes: ["技术合作", "导师辅导"],
             stage: "筹备阶段",
-            summary: "关注水质监测、异常识别和轻量可视化平台，适合传感和数据分析类方向。",
-            offer: ["提供水质场景问题", "技术人员答疑", "协助形成试点报告"],
+            summary: "关注水环境治理、环保运营和数字孪生管理，适合监测、预警和治理协同类项目。",
+            offer: ["提供治理场景问题", "技术人员答疑", "协助形成试点报告"],
             demand: "寻找会做监测可视化、告警模型和校园/社区水环境试点的团队。"
           },
           {
             id: "company-6",
-            name: "田野智农",
-            city: "四川",
-            track: "绿色农业与乡村科技",
-            finance: "未披露",
+            name: "蔚蓝引擎",
+            city: "上海",
+            track: "农业绿色科技",
+            finance: "天使轮",
             modes: ["场景试点", "市场验证"],
             stage: "创意阶段",
-            summary: "聚焦乡村传感、作物管理和绿色供应链场景，适合愿意做区域试点的团队。",
-            offer: ["提供试验田场景", "协助对接地方资源", "支持项目调研"],
-            demand: "希望与做物联网、环境监测和农业数据产品的团队合作。"
+            summary: "聚焦农业机器人、智能除草和绿色种植场景，适合农业科技、环境监测和智能装备团队。",
+            offer: ["提供试验场景想定", "协助对接农业问题", "支持项目调研"],
+            demand: "希望与做物联网、环境监测和农业数据产品的学生团队合作。"
           }
         ],
         routeTemplates: [
           {
-            title: "监测设备 + 数据平台 + 风险预警",
-            summary: "适合生态保护、水环境、设备运维等方向，最容易形成可视化成果。",
-            tags: ["人工智能", "物联网", "公共治理"]
+            title: "生态监测 + 数据评估 + 协同治理",
+            summary: "适合生态保护、水环境和公共治理方向，最容易形成“监测 + 评估 + 看板”的完整成果。",
+            tags: ["数据分析", "公共治理", "生态保护"]
           },
           {
-            title: "行为数据 + 积分机制 + 绿色消费",
-            summary: "适合校园回收、低碳生活和绿色社团运营，门槛低、传播性强。",
-            tags: ["平台系统", "校园场景", "增长运营"]
+            title: "资源回收 + 智能终端 + 小程序服务",
+            summary: "适合校园回收、低碳生活和社区服务，门槛低，也更容易做出可演示的 MVP。",
+            tags: ["平台系统", "校园场景", "循环经济"]
           },
           {
-            title: "能耗采集 + 决策看板 + 节能服务",
-            summary: "适合楼宇、实验室和园区场景，容易与真实企业需求连接。",
+            title: "能耗采集 + 看板分析 + 节能运营",
+            summary: "适合楼宇、实验室和园区场景，容易与真实企业需求和试点合作连接。",
             tags: ["数据分析", "节能降碳", "合作试点"]
+          },
+          {
+            title: "碳核算 + 数据接入 + 报告生成",
+            summary: "适合低碳服务、碳管理和企业服务方向，便于把复杂能力转成清晰的产品结构。",
+            tags: ["平台系统", "碳管理", "企业服务"]
           }
         ],
         progressFallback: [
@@ -2956,7 +3251,7 @@
             id: "fallback-1",
             companyId: "company-4",
             stageIndex: 1,
-            note: "建议先准备校园试点方案和激励机制说明。"
+            note: "建议先准备展示页、技术说明和试点路线图，再进入合作推进。"
           }
         ]
       };
@@ -2986,7 +3281,7 @@
         registerRole: "student",
         profile: {
           projectName: "校园循环回收数据平台",
-          track: "循环经济与回收",
+          track: "固废回收与循环利用",
           region: "广东",
           stage: "筹备阶段",
           digital: "具备基础原型",
@@ -3170,7 +3465,7 @@
 
         const sortedRegions = [...DATA.regionHeat]
           .map((item) => {
-            const score = Math.round(item.heat * 0.55 + (item.region === profile.region ? 18 : 0) + (profile.track === "循环经济与回收" && item.region === "广东" ? 8 : 0) + (profile.track === "智能节能与能效服务" && item.region === "江苏" ? 8 : 0));
+            const score = Math.round(item.heat * 0.55 + (item.region === profile.region ? 18 : 0) + (profile.track.includes("循环") && item.region === "广东" ? 8 : 0) + (profile.track.includes("节能") && item.region === "江苏" ? 8 : 0));
             return { region: item.region, score };
           })
           .sort((a, b) => b.score - a.score)
@@ -3468,17 +3763,7 @@
       function renderSidebarProfile() {
         const container = $("#sidebarProfile");
         if (!state.currentUser) {
-          container.innerHTML = `
-            <div class="profile-role">游客模式</div>
-            <h4>先保存你的工作台</h4>
-            <p>登录后可同步保存政策、案例、合作意向和推进记录，下次回来会直接接着看。</p>
-            <ul>
-              <li>收藏政策与案例</li>
-              <li>发起企业沟通</li>
-              <li>沉淀推进时间线</li>
-            </ul>
-            <button class="primary-btn" type="button" id="sidebarLoginBtn">立即登录</button>
-          `;
+          container.innerHTML = "";
           $("#authTrigger").textContent = "登录 / 注册";
           return;
         }
@@ -3549,6 +3834,29 @@
             <div class="metric-value">${escapeHtml(item.value)}</div>
             <div class="metric-note">${escapeHtml(item.note)}</div>
           </article>
+        `).join("");
+      }
+
+      function renderOverviewFocus() {
+        $("#dataFocusGrid").innerHTML = DATA.focusBoards.map((board) => `
+          <article class="focus-card">
+            <div>
+              <h4>${escapeHtml(board.title)}</h4>
+              <p>${escapeHtml(board.note)}</p>
+            </div>
+            <div class="focus-stat-list">
+              ${board.stats.map((item) => `
+                <div class="focus-stat">
+                  <span>${escapeHtml(item.label)}</span>
+                  <strong>${escapeHtml(item.value)}</strong>
+                </div>
+              `).join("")}
+            </div>
+          </article>
+        `).join("");
+
+        $("#dataNoteRow").innerHTML = DATA.inlineNotes.map((item) => `
+          <span class="link-chip">${escapeHtml(item)}</span>
         `).join("");
       }
 
@@ -3629,16 +3937,18 @@
         };
         $("#moduleGrid").innerHTML = DATA.modules.map((item) => `
           <article class="module-card">
-            <div class="module-mark">${escapeHtml(item.mark)}</div>
-            <div>
+            <div class="module-card-top">
+              <div class="module-mark">${escapeHtml(item.mark)}</div>
+              <span class="module-score">推荐 ${scoreMap[item.id]} 分</span>
+            </div>
+            <div class="module-card-body">
               <h4>${escapeHtml(item.title)}</h4>
               <p>${escapeHtml(item.desc)}</p>
             </div>
-            <div class="scene-resource-box">
-              <strong>当前推荐强度</strong>
-              <span>${scoreMap[item.id]} 分 · ${item.id === "policy" ? "优先做清单" : item.id === "collab" ? "可开始接触合作" : item.id === "inspiration" ? "适合补案例表达" : "适合先做方向判断"}</span>
+            <div class="module-card-foot">
+              <div class="module-hint">${item.id === "policy" ? "更适合先做政策清单和申报准备" : item.id === "collab" ? "可直接进入企业需求与合作推进" : item.id === "inspiration" ? "适合先补案例表达和技术路径" : "适合先做方向判断与区域切入"}</div>
+              <button class="secondary-btn" type="button" data-jump-view="${escapeHtml(item.id)}">${escapeHtml(item.cta)}</button>
             </div>
-            <button class="secondary-btn" type="button" data-jump-view="${escapeHtml(item.id)}">${escapeHtml(item.cta)}</button>
           </article>
         `).join("");
       }
@@ -4009,20 +4319,23 @@
           `;
         }
 
-        $("#policyFlowGrid").innerHTML = [
-          { step: "筛", title: "筛出高匹配政策", text: "先根据地区、阶段和支持类型缩小范围。" },
-          { step: "办", title: "进入办理平台", text: "继续查看办理入口、身份要求和材料结构。" },
-          { step: "接", title: "接入赛事或孵化平台", text: "补上展示通道和后续服务资源。" },
-          { step: "推", title: "沉淀为行动清单", text: "把政策转成具体的材料准备和下一步动作。" }
-        ].map((item) => `
+        $("#policyFlowGrid").innerHTML = DATA.policyJourney.map((item) => `
           <article class="flow-card">
             <div class="flow-mark">${escapeHtml(item.step)}</div>
             <div>
               <h4>${escapeHtml(item.title)}</h4>
               <p>${escapeHtml(item.text)}</p>
+              <div class="badge-row" style="margin-top:14px;">
+                ${item.links.map((link) => `<span class="badge">${escapeHtml(link)}</span>`).join("")}
+              </div>
             </div>
           </article>
         `).join("");
+
+        $("#policyPlatformLinks").innerHTML = [
+          ...DATA.platformEntries.map((item) => ({ type: "平台", text: item })),
+          ...DATA.eventEntries.map((item) => ({ type: "赛事", text: item }))
+        ].map((item) => `<span class="link-chip">${escapeHtml(item.type)} · ${escapeHtml(item.text)}</span>`).join("");
 
         $("#policyGrid").innerHTML = filtered.length ? filtered.map((item) => `
           <article class="policy-card ${state.highlight.type === "政策" && state.highlight.id === item.id ? "highlighted" : ""}">
@@ -4456,6 +4769,7 @@
         renderSidebarProfile();
         renderHeroAside();
         renderOverviewMetrics();
+        renderOverviewFocus();
         renderScenarioGrid();
         renderPathGrid();
         renderFlowGrid();
@@ -4511,7 +4825,7 @@
       function resetRadar() {
         state.profile = {
           projectName: "校园循环回收数据平台",
-          track: "循环经济与回收",
+          track: "固废回收与循环利用",
           region: "广东",
           stage: "筹备阶段",
           digital: "具备基础原型",
